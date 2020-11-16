@@ -1,31 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # THE SPARK FOUNDATION
-# ## IOT AND COMPUTER VISION
-# ### TASK: Implement an image color detector which identifies all the colors in an image
-
-# Importing necessary libraries
-
-# In[1]:
-
 
 import numpy as np 
 import cv2  
 
-
-# Capturing video using cv2
-
-# In[2]:
-
-
-video = cv2.VideoCapture('/Users/dell/Downloads/videoplayback (1).mp4')  
-
-
-# While loop to detect colours
-
-# In[5]:
-
+video = cv2.VideoCapture('video.mp4')  
 
 while(1): 
     _, imageFrame = video.read() 
@@ -120,10 +97,3 @@ while(1):
         cap.release() 
         cv2.destroyAllWindows() 
         break 
-
-
-# In[ ]:
-
-
-
-
